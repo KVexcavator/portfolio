@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BoBo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleleapis.com/css?family=Ralewey">
+</head>
+<body>
+	<header>
+
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="img/logo.png" alt=""></a>
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+				<a id="menu" href="#" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<h2>Location</h2>
+		<div id="map">
+			<!-- developer.google.com/maps/documentation/javascript/adding-a-google-map?hl=ru -->
+			<script>
+				// Initialize and add the map
+				function initMap() {
+ 			 		// The location of Uluru
+  				var uluru = {lat:43.3449248, lng: 76.9967151};
+  				// The map, centered at Uluru
+ 					var map = new google.maps.Map(
+      		document.getElementById('map'), {zoom: 5, center: uluru});
+  				// The marker, positioned at Uluru
+ 				 var marker = new google.maps.Marker({position: uluru, map: map});
+				}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD53i3kTizc77eivZydAnEqQ1F4qV4xCUQ&callback=initMap">
+    </script>
+		</div>
+	</main>
+
+	<footer>
+		<nav>
+			  <a href="index.html">HOME</a>
+				<a href="projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+		</nav>
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="img/logo.png" alt=""></a>
+		</div>
+		<div class="social">
+			<a href="#"><img src="img/social_items/facebook.png" alt=""></a>
+			<a href="#"><img src="img/social_items/google-plus.png" alt=""></a>
+			<a href="#"><img src="img/social_items/twitter.png" alt=""></a>
+			<a href="#"><img src="img/social_items/you-tube.png" alt=""></a>
+			<a href="#"><img src="img/social_items/rss.png" alt=""></a>
+		</div>
+		<a href="contact.html">Kalangarishvili Vaycheslav | 2018</a>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+В папке три  проекта. Два сайта различной сложности и плагин на wordpress. Всё проверенно на openserver
+
+There are three demo projects in the folder. Two sites of varying complexity and a wordpress plugin. All checked on openserver
+
+23.07.2018
